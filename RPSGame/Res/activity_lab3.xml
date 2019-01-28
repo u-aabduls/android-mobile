@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Lab3Activity">
+
+    <EditText
+        android:id="@+id/player1Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="Enter name of Player 1:" />
+
+    <EditText
+        android:id="@+id/player2Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/player1Name"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/textView2"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/player2Name"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="Enter Name of Player 2:" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/player2Name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="Round 1" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3"
+        android:text="Player 1" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="11dp"
+        android:text="Player 2" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Round 2" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView6"
+        android:text="Player 1" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView7"
+        android:layout_marginTop="13dp"
+        android:text="Player 2" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Round 3" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView9"
+        android:text="Player 1" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/spinnerRound3Player2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Player 2" />
+
+    <Button
+        android:id="@+id/buttonRound1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView6"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"
+        android:onClick="buttonRound1Clicked"
+        android:text="FINISH ROUND 1" />
+
+    <Button
+        android:id="@+id/buttonRound2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonRound1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/buttonRound1"
+        android:layout_below="@+id/textView6"
+        android:onClick="buttonRound2Clicked"
+        android:text="FINISH ROUND 2" />
+
+    <Button
+        android:id="@+id/buttonRound3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonRound2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/buttonRound2"
+        android:layout_below="@+id/textView9"
+        android:onClick="buttonRound3Clicked"
+        android:text="FINISH ROUND 3" />
+
+    <Spinner
+        android:id="@+id/spinnerRound1Player1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_toLeftOf="@+id/textView3"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toStartOf="@+id/textView3"
+        android:entries="@array/spinnerOptions" />
+
+    <Spinner
+        android:id="@+id/spinnerRound1Player2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/spinnerRound1Player1"
+        android:layout_alignRight="@+id/spinnerRound1Player1"
+        android:layout_below="@+id/spinnerRound1Player1"
+        android:layout_toEndOf="@+id/textView5"
+        android:layout_toRightOf="@+id/textView5"
+        android:entries="@array/spinnerOptions" />
+
+    <Spinner
+        android:id="@+id/spinnerRound2Player1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_toEndOf="@+id/textView7"
+        android:layout_toLeftOf="@+id/textView6"
+        android:layout_toRightOf="@+id/textView7"
+        android:layout_toStartOf="@+id/textView6"
+        android:entries="@array/spinnerOptions" />
+
+    <Spinner
+        android:id="@+id/spinnerRound2Player2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView9"
+        android:layout_alignEnd="@+id/spinnerRound2Player1"
+        android:layout_alignRight="@+id/spinnerRound2Player1"
+        android:layout_below="@+id/spinnerRound2Player1"
+        android:layout_toEndOf="@+id/textView8"
+        android:layout_toRightOf="@+id/textView8"
+        android:entries="@array/spinnerOptions" />
+
+    <Spinner
+        android:id="@+id/spinnerRound3Player1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonRound3"
+        android:layout_toEndOf="@+id/textView10"
+        android:layout_toLeftOf="@+id/textView9"
+        android:layout_toRightOf="@+id/textView10"
+        android:layout_toStartOf="@+id/textView9"
+        android:entries="@array/spinnerOptions" />
+
+    <Spinner
+        android:id="@+id/spinnerRound3Player2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/spinnerRound3Player1"
+        android:layout_alignRight="@+id/spinnerRound3Player1"
+        android:layout_below="@+id/spinnerRound3Player1"
+        android:layout_toEndOf="@+id/textView11"
+        android:layout_toRightOf="@+id/textView11"
+        android:entries="@array/spinnerOptions" />
+
+    <Button
+        android:id="@+id/buttonNewGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="22dp"
+        android:onClick="buttonNewGameClicked"
+        android:text="START A NEW GAME" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonRound3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="New Game Started." />
+
+</android.widget.RelativeLayout>
